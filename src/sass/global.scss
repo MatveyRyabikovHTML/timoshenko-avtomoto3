@@ -1,0 +1,90 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  align-content: start;
+  font-family: $base-f;
+  font-size: 16px;
+  line-height: 19px;
+  color: $base-black-light;
+  background-color: $base-white;
+}
+
+input[type="number"] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.button {
+  padding: 16px 18px;
+  font-size: 14px;
+  letter-spacing: .12rem;
+  text-transform: uppercase;
+  border-radius: 0;
+
+  &--type1 {
+    border: none;
+    font-family: $special-f;
+    color: $base-white;
+    background-color: $base-red;
+  }
+
+  &--type2 {
+    border: 1px solid $base-red;
+    color: $base-red;
+    background-color: $base-white;
+  }
+}
+
+.button--type1:focus,
+.button--type1:hover {
+  color: $base-white;
+  background-color: $special-red;
+}
+
+.button--type2:focus,
+.button--type2:hover {
+  color: $base-white;
+  background-color: $base-red;
+}

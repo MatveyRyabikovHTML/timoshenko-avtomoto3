@@ -1,0 +1,25 @@
+.profile {
+  line-height: 21px;
+}
+
+.profile__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile__item {
+  display: flex;
+  justify-content: space-between;
+  width: 565px;
+  padding: 20px 0 8px 0;
+  border-bottom: 1px solid $special-gray-light;
+}
+
+.profile__header {
+  color: $base-black-light;
+}
+
+.profile__value {
+  color: $base-black
+}
